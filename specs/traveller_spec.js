@@ -73,6 +73,8 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getJourneysByMinDistance(1000))
   });
 
+  /////// extensions /////
+
   it('should be able to calculate total distance travelled', function() {
     const actual = 11710;
     assert.deepStrictEqual(actual, traveller.calculateTotalDistanceTravelled());
