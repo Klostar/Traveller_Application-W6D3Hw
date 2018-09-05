@@ -9,12 +9,13 @@ const Traveller = function(journeys) {
 Traveller.prototype.getJourneyStartLocations = function(journeys) {
 return this.journeys.map((journeys) => {
   return journeys.startLocation;
-
-});
+  });
 };
 
-Traveller.prototype.getJourneyEndLocations = function () {
-
+Traveller.prototype.getJourneyEndLocations = function (jouneys) {
+  return this.journeys.map((journeys) =>{
+    return journeys.endLocation;
+  });
 };
 
 Traveller.prototype.getModesOfTransport = function () {

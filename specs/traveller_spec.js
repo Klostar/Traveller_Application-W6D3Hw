@@ -42,7 +42,7 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getJourneyStartLocations());
   });
 
-  xit('should be able to get the journeys end locations', function() {
+  it('should be able to get the journeys end locations', function() {
     const actual = [
       journey1.endLocation,
       journey2.endLocation,
