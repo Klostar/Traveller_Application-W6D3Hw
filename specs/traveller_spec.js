@@ -21,7 +21,6 @@ describe('Traveller', function() {
     journeys = [journey1, journey2, journey3, journey4, journey5];
     traveller = new Traveller(journeys);
 
-    journeysStartLocation = [journey1.startLocation, journey2.startLocation, journey3.startLocation, journey4.startLocation, journey5.startLocation];
 
 
   });
@@ -53,7 +52,7 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getJourneyEndLocations());
   });
 
-  xit('should be able to get a list of the modes of transport', function() {
+  it('should be able to get a list of the modes of transport', function() {
     const actual = [ 'train', 'train', 'aeroplane', 'car', 'ferry' ];
     assert.deepStrictEqual(actual, traveller.getModesOfTransport());
   });

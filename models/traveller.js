@@ -18,8 +18,10 @@ Traveller.prototype.getJourneyEndLocations = function (jouneys) {
   });
 };
 
-Traveller.prototype.getModesOfTransport = function () {
-
+Traveller.prototype.getModesOfTransport = function (transport) {
+  return this.journeys.map((journeys) => {
+    return journeys.transport;
+  });
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
