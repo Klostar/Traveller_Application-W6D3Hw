@@ -20,6 +20,10 @@ describe('Traveller', function() {
     journey5 = new Journey('lancaster', 'isle of man', 'ferry', 80);
     journeys = [journey1, journey2, journey3, journey4, journey5];
     traveller = new Traveller(journeys);
+
+    journeysStartLocation = [journey1.startLocation, journey2.startLocation, journey3.startLocation, journey4.startLocation, journey5.startLocation];
+
+
   });
 
   it('should have a collection of journeys', function() {
@@ -27,7 +31,7 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, journeys);
   });
 
-  xit('should be able to get the journeys start locations', function() {
+  it('should be able to get the journeys start locations', function() {
     const actual = [
       journey1.startLocation,
       journey2.startLocation,

@@ -1,9 +1,16 @@
+
+
+
+
 const Traveller = function(journeys) {
   this.journeys = journeys;
 };
 
-Traveller.prototype.getJourneyStartLocations = function() {
+Traveller.prototype.getJourneyStartLocations = function(journeys) {
+return this.journeys.map((journeys) => {
+  return journeys.startLocation;
 
+});
 };
 
 Traveller.prototype.getJourneyEndLocations = function () {
@@ -27,7 +34,7 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-  
+
 };
 
 
